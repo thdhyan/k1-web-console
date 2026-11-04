@@ -9,6 +9,18 @@ Fleet dashboard and camera tools; one web shell, plugin pages over HTTP/WS.
 | Files / LOC | 8 files · 554 lines (py, sh, cpp) |
 | Part of | [k1-workspace](https://github.com/thdhyan/k1-workspace) (architecture and layering rules live there) |
 
+## Where it sits
+
+```mermaid
+flowchart TB
+  k1_web_console((k1-web-console))
+  style k1_web_console fill:#e8833a,color:#000
+```
+
+Used by: nothing (top layer).
+
+![k1-workspace layers](https://raw.githubusercontent.com/thdhyan/k1-workspace/main/docs/img/architecture.png)
+
 ## Install
 
 Not an installable library: clone it and run the scripts in place.
@@ -19,6 +31,7 @@ git clone https://github.com/thdhyan/k1-web-console
 ## Layout
 
 ```
+README.md
 docker/  (1 files)
   k1m_ui.py
 docs/  (4 files)
