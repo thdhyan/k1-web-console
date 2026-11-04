@@ -1,0 +1,17 @@
+[project]
+name = "k1-web-console"
+version = "0.1.0"
+description = "Fleet dashboard and camera tools; one web shell, plugin pages over HTTP/WS."
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "opencv-python",
+  "requests",
+  "websockets",
+]
+
+[tool.uv]
+package = false  # scripts / ROS packages, not an importable library
+
+# Provided by the environment (ROS 2, Isaac Sim/Lab, mjlab, robot SDK) or not on PyPI under this name:
+# rclpy, sensor_msgs, streamlit
